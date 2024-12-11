@@ -1,0 +1,9 @@
+services:
+  
+  db_cmdata: 
+    image: mysql:latest
+    container_name: cmdata-db
+    ports:
+      - ${MYSQL_PORT}:3306
+    env_file:
+      ".env"

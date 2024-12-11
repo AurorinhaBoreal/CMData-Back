@@ -1,0 +1,43 @@
+{
+  "name": "cmdata-back",
+  "version": "0.1.0",
+  "description": "This is the backend of the CMData project, it contains all the database and middleware configuration, besides the main data processing of the project.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test",
+    "db": "docker compose up -d",
+    "server": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AurorinhaBoreal/CMData-Front.git"
+  },
+  "keywords": [
+    "CMData",
+    "CLI",
+    "Node",
+    "Terminal",
+    "Commands",
+    "Tools",
+    "Repository"
+  ],
+  "author": "Aurora Kruschewsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AurorinhaBoreal/CMData-Front/issues"
+  },
+  "homepage": "https://github.com/AurorinhaBoreal/CMData-Front#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0",
+    "mysql2": "^3.11.5",
+    "nodemon": "^3.1.7",
+    "sequelize": "^6.37.5"
+  }
+}
