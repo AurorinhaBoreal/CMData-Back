@@ -33,6 +33,10 @@ User.init({
         type:DataTypes.STRING(50),
         allowNull:true
     },
+    avatar_url:{
+        type:DataTypes.STRING(255),
+        allowNull:false
+    },
     deleted:{
         type:DataTypes.BOOLEAN,
         allowNull: false,

@@ -1,7 +1,6 @@
 const { StatusCodes, ReasonPhrases} = require('http-status-codes')
 const User = require('../model/user')
 const { Router } = require('express');
-const { Sequelize } = require('sequelize');
 
 const route = Router();
 
@@ -25,14 +24,15 @@ route.get('/list', async (req, res) => {
 
 route.post('/register', async (req, res) => {
 
-    const { email, password, firstName, lastName, nickname} = req.body;
+    const { email, password, firstName, lastName, nickname, avatar_url} = req.body;
 
     User.create({
         email,
         password,
         firstName,
         lastName,
-        nickname
+        nickname,
+        avatar_url
     })
         .then(()=>{
             return res.status(StatusCodes.CREATED).send({
