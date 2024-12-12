@@ -33,7 +33,7 @@ User.init({
         type:DataTypes.STRING(50),
         allowNull:true
     },
-    avatar_url:{
+    avatarUrl:{
         type:DataTypes.STRING(255),
         allowNull:false
     },

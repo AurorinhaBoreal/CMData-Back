@@ -24,7 +24,7 @@ route.get('/list', async (req, res) => {
 
 route.post('/register', async (req, res) => {
 
-    const { email, password, firstName, lastName, nickname, avatar_url} = req.body;
+    const { email, password, firstName, lastName, nickname, avatarUrl} = req.body;
 
     User.create({
         email,
@@ -32,7 +32,7 @@ route.post('/register', async (req, res) => {
         firstName,
         lastName,
         nickname,
-        avatar_url
+        avatarUrl
     })
         .then(()=>{
             return res.status(StatusCodes.CREATED).send({
