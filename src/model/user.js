@@ -17,10 +17,6 @@ User.init({
         type:DataTypes.STRING(100),
         allowNull: false,
     },
-    avatar:{
-        type:DataTypes.STRING(255),
-        allowNull: true,
-    },
     firstName:{
         type:DataTypes.STRING(100),
         allowNull:false
